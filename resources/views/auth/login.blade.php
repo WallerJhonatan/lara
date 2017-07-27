@@ -1,4 +1,6 @@
-@extends('layouts.app')
+@component('layouts.app')
+
+@slot('title') Login Page @endslot
 
 @section('content')
     <div class="login-box">
@@ -69,3 +71,4 @@
         </div>
     </div>
 @endsection
+@endcomponent

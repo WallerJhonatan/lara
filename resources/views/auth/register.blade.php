@@ -1,4 +1,5 @@
-@extends('layouts.app')
+@component('layouts.app')
+@slot('title') Registro Page @endslot
 
 @section('content')
     <div class="register-box">
@@ -81,3 +82,4 @@
         </div>
     </div>
 @endsection
+@endcomponent
