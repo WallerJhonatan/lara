@@ -1,9 +1,9 @@
 @component('layouts.base')
 
-@slot('title') Página Inicial @endslot
+    @slot('title') Página Inicial @endslot
 
 @section('content')
 
-    @endsection
+@endsection
 
-    @endcomponent
+@endcomponent
