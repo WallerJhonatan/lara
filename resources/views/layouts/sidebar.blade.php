@@ -1,5 +1,4 @@
 <aside class="main-sidebar">
-    <!-- Left side column. contains the logo and sidebar -->
     <section class="sidebar">
         <!-- Sidebar user panel -->
         <div class="user-panel">
@@ -14,8 +13,6 @@
         <ul class="sidebar-menu" data-widget="tree">
             <li class="header">NAVEGAÇÃO PRINCIPAL</li>
             @include('menu.'.Auth::user()->type)
-
         </ul>
     </section>
-    <!-- /.sidebar -->
 </aside>

@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::prefix('admin')
+    ->middleware(['auth'])
+    ->group(function (){
+        Route::resource('products', 'Admin\ProductsController');
+    });
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
